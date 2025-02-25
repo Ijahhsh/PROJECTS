@@ -1,0 +1,98 @@
+<!--<html>
+    <head>
+        <style>
+            p{
+                color:red;
+            }
+            
+           
+        </style>
+        
+    </head>
+    <body>
+
+       
+            
+        <button id="b"> click me</button>
+        <p id="r"></p>
+        <img id="id" src="">
+        
+        
+        
+        <script src="script.js"></script>
+    </body>
+
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        li {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.5s, background-color 0.5s;
+        }
+
+        li:hover {
+            transform: rotate(3deg) scale(1.05);
+            background-color: #fbbf24; /* Tailwind yellow-400 */
+        }
+
+        .delete-btn {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            background-color: #e3342f;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .delete-btn:hover {
+            background-color: #cc1f1a;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="w-1/2 text-center">
+        <marquee direction="">
+            <h1 class="mb-6 text-3xl font-bold text-green-600">My To-Do List</h1>
+            </marquee>
+        
+        <div class="flex mb-4">
+            <input type="text" id="id" class="border flex-grow p-2 rounded-l-lg">
+            <button id="but" class="rounded-r-lg bg-green-500 text-white p-2">Add Task</button>
+        </div>
+        <ul id="ha" class="mt-4 space-y-2">       
+        </ul>
+    </div>
+    <script src="list.js"></script>
+</body>
+</html>
